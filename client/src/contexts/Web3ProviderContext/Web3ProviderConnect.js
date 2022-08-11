@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import CryptoKoffeeContract from "../../contracts/CryptoKoffee.json";
+import FurDetective from "../../contracts/FurDetective.json";
 import getWeb3 from "web3";
 
 const Web3ProviderConnect = async () => {
@@ -14,9 +14,9 @@ const Web3ProviderConnect = async () => {
 
       // Get the contract instance.
       const networkId = await web3.eth.net.getId();
-      const deployedNetwork = CryptoKoffeeContract.networks[networkId];
+      const deployedNetwork = FurDetective.networks[networkId];
       const contractInstance = new web3.eth.Contract(
-        CryptoKoffeeContract.abi,
+        FurDetective.abi,
         deployedNetwork && deployedNetwork.address
       );
     } catch (error) {

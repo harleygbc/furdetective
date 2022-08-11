@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import CryptoKoffeeContract from "./contracts/CryptoKoffee.json";
+import FurDetective from "./contracts/FurDetective.json";
 import getWeb3 from "./getWeb3";
 
 // import "./App.css";
@@ -31,9 +31,9 @@ const Web3Provider = () => {
 
       // Get the contract instance.
       const networkId = await web3.eth.net.getId();
-      const deployedNetwork = CryptoKoffeeContract.networks[networkId];
+      const deployedNetwork = FurDetective.networks[networkId];
       const contractInstance = new web3.eth.Contract(
-        CryptoKoffeeContract.abi,
+        FurDetective.abi,
         deployedNetwork && deployedNetwork.address,
       );
       // setWeb3(web3)
@@ -79,16 +79,9 @@ const Web3Provider = () => {
       loading  ? <div>Loading Web3, accounts, and contract...</div> 
     : 
     <div className="App">
-        <h1>Yeeaayy CryptoKoffee is Here!</h1>
+        <h1>Yeeaayy FurDetective is Here!</h1>
         <p> Your wallet has been created and ready to accept donations.</p>
-       
-        <h2>Wallet created details</h2>
-      
-        <div>Wallet Identifier: {walletInfo.name}</div>
-        <div>Wallet Link hashed: {walletInfo.link}</div>
-        <div>Wallet Address: {walletInfo.walletAddress}</div>
-        <div>Donation Balance: {walletInfo.walletBalance}</div>
-        <div>Number of Donations: {walletInfo.numOfDonations}</div>
+   
      </div>
     } 
     </div>
