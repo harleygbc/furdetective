@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-import { Route, BrowserRouter } from "react-router-dom";
+// import { Route, BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 // import logo from "./logo.svg";
 import "./styles/App.css";
 // import "./styles/dasboard/assets/css/bootstrap.min.css";
@@ -20,8 +21,6 @@ import "./styles/dasboard/assets/js/script.js";
 
 // import "./styles/dasboard/assets/js/bootstrap.bundle.min.js"
 
-
-
 import Dashboard from "./pages/Dashboard/index";
 import AddPet from "./pages/Pets/AddPet";
 import NavigationBar from "components/NavigationBar/NavigationBar";
@@ -40,17 +39,14 @@ function App() {
     };
   }, []);
   return (
-    <div className="App">
-      <BrowserRouter>
-        <NavigationBar />
-        <Route path="/new-pet" component={AddPet} exact />
-        <Route path="/" component={Dashboard} exact />
-        <Route path="/pet-list" component={PetList} exact />
-        <Route path="/new-user" component={AddUser} exact />
-
-        <Sidebar />
-      </BrowserRouter>
-    </div>
+    <Router>
+      <NavigationBar />
+      <Route path="/new-pet" component={AddPet} exact />
+      <Route path="/" component={Dashboard} exact />
+      <Route path="/pet-list" component={PetList} exact />
+      <Route path="/new-user" component={AddUser} exact />
+      <Sidebar />
+    </Router>
   );
 }
 

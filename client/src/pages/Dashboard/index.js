@@ -1,49 +1,52 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Web3Modal from "web3modal";
 import Web3 from "web3";
-import Button from "../../components/Button/Button";
-import WalletConnectProvider from "@walletconnect/web3-provider";
-import CoinbaseWalletSDK from "@coinbase/wallet-sdk";
-import Web3ProviderConnect from "../../../src/contexts/Web3ProviderContext/Web3ProviderConnect";
-import FurDetective from "../../contracts/FurDetective.json";
+import { useSelector, useDispatch } from "react-redux";
+import ConnectToMetamask from "components/ConnectToMetamask/ConnectToMetamaskComponent";
+import {web3Modal, providerOptions} from  "./../../contexts/Web3ProviderContext/Web3Provider";
+import jsonInterface from "./../../contracts/FurDetective.json";
+import {contractData} from "./../../contexts/Web3ProviderContext/ContractSlice";
 
 const Index = () => {
-  const providerOptions = {
-    /* See Provider Options Section */
-    walletconnect: {
-      package: WalletConnectProvider, // required
-      options: {
-        infuraId: "INFURA_ID", // required
-      },
-    },
-    coinbasewallet: {
-      package: CoinbaseWalletSDK, // Required
-      options: {
-        appName: "My Awesome App", // Required
-        infuraId: "INFURA_ID", // Required
-        rpc: "", // Optional if `infuraId` is provided; otherwise it's required
-        chainId: 1, // Optional. It defaults to 1 if not provided
-        darkMode: false, // Optional. Use dark theme, defaults to false
-      },
-    },
-  };
+  const Contract = require('web3-eth-contract');
+  const dispatch = useDispatch();
 
-  const web3Modal = new Web3Modal({
-    network: "testnet", // optional
-    cacheProvider: true, // optional
-    providerOptions, // required
-  });
+  const [isConnected, setIsConnected] = useState(false);
+  const connectedWeb3Account = useSelector(
+    (state) => state.MetaMaskConnectorReducer.web3Account
+  );
+ 
 
-  const connectToWallet = async () => {
-    const provider = await web3Modal.connect();
-    const web3 = new Web3(provider);
-    console.log(await web3.eth.getAccounts());
-  };
+    const getContract = async() => {
+      const provider = await web3Modal.connect();
+      Contract.setProvider(provider);
+      const contract = new Contract(jsonInterface.abi, 
+        process.env.REACT_APP_CONTRACT_ADDRESS);
+        const web3 = new Web3(provider);
+        console.log("contract --->", contract)
+        // console.log(await web3.eth.getAccounts())
+      
+        // registerPetOwner(contract)
+        dispatch(contractData({ contractData: contract}));
+        
+      
+    };
+
+  useEffect(() => {
+    getContract();
+    console.log("gghjhk")
+    console.log(isConnected)
+  }, [isConnected]);
+
   return (
     <div>
       <div className="page-wrapper">
+      
         <div className="content">
+        {!isConnected ? <ConnectToMetamask/>: ""}
+        
           <div className="row">
+
             <div className="col-lg-3 col-sm-6 col-12">
               <div className="dash-widget">
                 <div className="dash-widgetimg">
@@ -57,6 +60,7 @@ const Index = () => {
                     />
                   </span>
                 </div>
+                
                 <div className="dash-widgetcontent">
                   <h5>
                     $
@@ -129,7 +133,9 @@ const Index = () => {
                     />
                   </span>
                 </div>
+                
                 <div className="dash-widgetcontent">
+                
                   <h5>
                     $
                     <span className="counters" data-count="40000.00">
@@ -144,7 +150,7 @@ const Index = () => {
               <div className="dash-count">
                 <div className="dash-counts">
                   <h4>100</h4>
-                  <h5>Customers</h5>
+                  <h5>Pets Recorded</h5>
                 </div>
                 <div className="dash-imgs">
                   <i data-feather="user"></i>
@@ -279,9 +285,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </div>
-        <h1> Dashboard home page </h1>
-        <Button label="Connect to Metamask" onClick={connectToWallet} />
+        </div>        
       </div>
     </div>
   );

@@ -1,6 +1,41 @@
-import React from "react";
+import React, {useRef} from "react";
+
+import { useSelector, useDispatch } from "react-redux";
 
 const AddUser = () => {
+
+  // Access data from redux
+  const connectedWeb3Account = useSelector(
+    (state) => state.MetaMaskConnectorReducer.web3Account
+  );
+  const contractData = useSelector(
+    (state) => state.ContractReducer.contractState
+  );
+    let fullName = useRef(null);
+    let cellPhone = useRef(null);
+    let email = useRef(null);
+    let location = useRef(null);
+
+    const handleUserSubmit = async (event) => {
+      const address = connectedWeb3Account.web3Account[0]
+      console.log(contractData.contractData)
+      fullName = fullName.current.value;
+      cellPhone = cellPhone.current.value;
+      email = email.current.value;
+      location = location.current.value;
+      const contract = contractData.contractData
+      registerPetOwner(contract, address, fullName, cellPhone, email, location)
+      event.target.reset();
+
+  }
+  const registerPetOwner = async (contract, address, fullName, cellPhone, email, location) => {
+    await contract.methods.registerPetOwner(fullName, cellPhone, email, location).send({from: address}
+      ).on('receipt', function(){
+      alert("Transaction sent!")
+     
+    });
+  };
+
   return (
     <div>
       <div className="page-wrapper">
@@ -18,25 +53,33 @@ const AddUser = () => {
                 <div className="col-lg-3 col-sm-6 col-12">
                   <div className="form-group">
                     <label>Full Name</label>
-                    <input type="text" />
+                    <input type="text"
+                    ref={fullName}
+                    />
                   </div>
                 </div>
                 <div className="col-lg-3 col-sm-6 col-12">
                   <div className="form-group">
                     <label>Cell Phone</label>
-                    <input type="text" />
+                    <input type="text"
+                    ref={cellPhone}
+                     />
                   </div>
                 </div>
                 <div className="col-lg-3 col-sm-6 col-12">
                   <div className="form-group">
                     <label>Email</label>
-                    <input type="text" />
+                    <input type="text" 
+                    ref={email}
+                    />
                   </div>
                 </div>
                 <div className="col-lg-3 col-sm-6 col-12">
                   <div className="form-group">
                     <label>Location</label>
-                    <input type="text" />
+                    <input type="text" 
+                    ref={location}
+                    />
                   </div>
                 </div>
 
@@ -59,12 +102,10 @@ const AddUser = () => {
                   </div>
                 </div>
                 <div className="col-lg-12">
-                  <a href="javascript:void(0);" className="btn btn-submit me-2">
-                    Submit
-                  </a>
-                  <a href="productlist.html" className="btn btn-cancel">
-                    Cancel
-                  </a>
+                <button onClick={handleUserSubmit}
+                  className="btn btn-submit me-2">
+                  Submit
+                  </button>
                 </div>
               </div>
             </div>

@@ -4,6 +4,7 @@ pragma solidity ^0.8.4.0;
 
 contract FurDetective{
     address owner;
+    uint[] storeChipIds;
 
     struct OwnerInfo{
         string fullName;
@@ -35,9 +36,8 @@ contract FurDetective{
     }
     // OwnerInfo ownerinfo;
     // uint[] public myPets;
-    mapping(address => RegisteredPets) public myRegisteredPets;
+    mapping(address => RegisteredPets) private myRegisteredPets;
     
-    mapping(address => uint256[]) public stakedByAdddress;
 
     // mapping(address => Balance) public balanceReceived;
     mapping(address => OwnerInfo) private ownerInfoMapping;
@@ -79,19 +79,30 @@ contract FurDetective{
     }
 
     function registerPets(string memory _name, uint _chipId, string memory _appleTag, string memory _qrCode,
-                        string memory _animalType, string memory _gender, string memory _breed, string memory _description, uint256[] memory tokenIds) public onlyOwner{
+                        string memory _animalType, string memory _gender, string memory _breed, string memory _description) public onlyOwner{
         RegisterPet memory _registerPet = RegisterPet({
             name: _name, chipId: _chipId, appleTag: _appleTag, qrCode: _qrCode, animalType: _animalType, gender: _gender, 
             breed: _breed, description: _description, timeStamp: block.timestamp, sender: msg.sender 
             });
+        storeChipIds.push(_chipId);
+        RegisteredPets memory registeredPets = RegisteredPets({chipId: storeChipIds, petOwner: msg.sender});
+
         registeredPetsMapping[msg.sender] = _registerPet;
         searchPetByChipId[_chipId] = _registerPet;
         searchPetByAppleTag[_appleTag] = _registerPet;
         searchPetByQrCode[_qrCode] = _registerPet;
-        stakedByAdddress[msg.sender].push(tokenIds[_chipId]);
-        // myPets[msg.sender].push(_chipId);
+        myRegisteredPets[msg.sender] = registeredPets;
+
+    
 
     }
-
+    function getMyRegisteredPets(address petOwnerAddress) public view returns(uint[] memory) {
+        return myRegisteredPets[petOwnerAddress].chipId;
+    }
+    function getPetByQRCode(string memory _qrCode) public view returns (string memory name, string memory gender, string memory breed, address sender) {
+        // grab the owner / sender and use that to pull registered owners info and return it.
+        return (searchPetByQrCode[_qrCode].name, searchPetByQrCode[_qrCode].breed, searchPetByQrCode[_qrCode].gender, searchPetByQrCode[_qrCode].sender);
+    }
 }
+
 
