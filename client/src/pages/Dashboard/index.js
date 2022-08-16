@@ -34,7 +34,6 @@ const Index = () => {
 
   useEffect(() => {
     getContract();
-    console.log("gghjhk")
     console.log(isConnected)
   }, [isConnected]);
 
@@ -199,87 +198,60 @@ const Index = () => {
                 <table className="table datatable">
                   <thead>
                     <tr>
-                      <th>SNo</th>
-                      <th>Product Code</th>
-                      <th>Product Name</th>
-                      <th>Brand Name</th>
-                      <th>Category Name</th>
-                      <th>Expiry Date</th>
+                    <th>Pet Name</th>
+                    <th>gender</th>
+                    <th>Animal Type</th>
+                    <th>Chip Id</th>
+                    <th>Apple Tag</th>
+                    <th>Qr Code</th>
+                    <th>Breed</th>
+                    <th>Time stamp</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>
-                        <a href="javascript:void(0);">IT0001</a>
-                      </td>
-                      <td className="productimgname">
-                        <a className="product-img" href="productlist.html">
-                          <img
-                            src={require("../../../src/styles/dasboard/assets/img/product/product2.jpg")}
-                            alt="product"
-                          />
-                        </a>
-                        <a href="productlist.html">Orange</a>
-                      </td>
-                      <td>N/D</td>
-                      <td>Fruits</td>
-                      <td>12-12-2022</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>
-                        <a href="javascript:void(0);">IT0002</a>
-                      </td>
-                      <td className="productimgname">
-                        <a className="product-img" href="productlist.html">
-                          <img
-                            src={require("../../../src/styles/dasboard/assets/img/product/product3.jpg")}
-                            alt="product"
-                          />
-                        </a>
-                        <a href="productlist.html">Pineapple</a>
-                      </td>
-                      <td>N/D</td>
-                      <td>Fruits</td>
-                      <td>25-11-2022</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>
-                        <a href="javascript:void(0);">IT0003</a>
-                      </td>
-                      <td className="productimgname">
-                        <a className="product-img" href="productlist.html">
-                          <img
-                            src={require("../../../src/styles/dasboard/assets/img/product/product4.jpg")}
-                            alt="product"
-                          />
-                        </a>
-                        <a href="productlist.html">Stawberry</a>
-                      </td>
-                      <td>N/D</td>
-                      <td>Fruits</td>
-                      <td>19-11-2022</td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>
-                        <a href="javascript:void(0);">IT0004</a>
-                      </td>
-                      <td className="productimgname">
-                        <a className="product-img" href="productlist.html">
-                          <img
-                            src={require("../../../src/styles/dasboard/assets/img/product/product5.jpg")}
-                            alt="product"
-                          />
-                        </a>
-                        <a href="productlist.html">Avocat</a>
-                      </td>
-                      <td>N/D</td>
-                      <td>Fruits</td>
-                      <td>20-11-2022</td>
-                    </tr>
+                  <tr>
+                 
+                  <td className="productimgname">
+                    <a href="javascript:void(0);" className="product-img">
+                      <img
+                        src={require("../../../src/styles/dasboard/assets/img/scruffy.png")}
+                        alt="product"
+                      />
+                    </a>
+                    <a href="javascript:void(0);">Scruffy</a>
+                  </td>
+                  <td>male</td>
+                  <td>dog</td>
+                  <td>0011</td>
+                  <td>1500</td>
+                  <td>Qr code</td>
+                  <td>customized Breed</td>
+                  <td>16th Aug 2022</td>
+              
+                </tr>
+
+                <tr>
+                 
+                <td className="productimgname">
+                  <a href="javascript:void(0);" className="product-img">
+                    <img
+                      src={require("../../../src/styles/dasboard/assets/img/scruffy.png")}
+                      alt="product"
+                    />
+                  </a>
+                  <a href="javascript:void(0);">Scruffy</a>
+                </td>
+                <td>male</td>
+                <td>dog</td>
+                <td>0011</td>
+                <td>1500</td>
+                <td>Qr code</td>
+                <td>furry Breed</td>
+                <td>16th Aug 2022</td>
+            
+              </tr>
+                
+                   
                   </tbody>
                 </table>
               </div>

@@ -7,13 +7,13 @@ const NavigationBar = () => {
         <div className="header-left active">
           <a href="/" className="logo">
             <img
-              src={require("../../../src/styles/dasboard/assets/img/logo.png")}
+              src={require("../../../src/styles/dasboard/assets/img/furdetective-orange.png")}
               alt=""
             />
           </a>
           <a href="index.html" className="logo-small">
             <img
-              src={require("../../../src/styles/dasboard/assets/img/logo-small.png")}
+              src={require("../../../src/styles/dasboard/assets/img/furdetective-orange.png")}
               alt=""
             />
           </a>

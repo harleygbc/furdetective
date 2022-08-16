@@ -101,10 +101,10 @@ const PetList = () => {
                       >
                         <img
                           src={
-                            require("../../../src/styles/dasboard/assets/img/icons/printer.svg")
-                              .default
+                            require("../../../src/styles/dasboard/assets/img/scruffy.png")
+                              
                           }
-                          alt="img"
+                          alt="img" 
                         />
                       </a>
                     </li>
@@ -112,71 +112,7 @@ const PetList = () => {
                 </div>
               </div>
 
-              <div className="card mb-0" id="filter_inputs">
-                <div className="card-body pb-0">
-                  <div className="row">
-                    <div className="col-lg-12 col-sm-12">
-                      <div className="row">
-                        <div className="col-lg col-sm-6 col-12">
-                          <div className="form-group">
-                            <select className="select">
-                              <option>Choose Product</option>
-                              <option>Macbook pro</option>
-                              <option>Orange</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div className="col-lg col-sm-6 col-12">
-                          <div className="form-group">
-                            <select className="select">
-                              <option>Choose Category</option>
-                              <option>Computers</option>
-                              <option>Fruits</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div className="col-lg col-sm-6 col-12">
-                          <div className="form-group">
-                            <select className="select">
-                              <option>Choose Sub Category</option>
-                              <option>Computer</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div className="col-lg col-sm-6 col-12">
-                          <div className="form-group">
-                            <select className="select">
-                              <option>Brand</option>
-                              <option>N/D</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div className="col-lg col-sm-6 col-12">
-                          <div className="form-group">
-                            <select className="select">
-                              <option>Price</option>
-                              <option>150.00</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div className="col-lg-1 col-sm-6 col-12">
-                          <div className="form-group">
-                            <a className="btn btn-filters ms-auto">
-                              <img
-                                src={
-                                  require("../../../src/styles/dasboard/assets/img/icons/search-whites.svg")
-                                    .default
-                                }
-                                alt="img"
-                              />
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            
 
               <div className="table-responsive">
                 <table className="table datanew">
@@ -196,8 +132,6 @@ const PetList = () => {
                       <th>Qr Code</th>
                       <th>Breed</th>
                       <th>Time stamp</th>
-
-                      <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -211,573 +145,46 @@ const PetList = () => {
                       <td className="productimgname">
                         <a href="javascript:void(0);" className="product-img">
                           <img
-                            src={require("../../../src/styles/dasboard/assets/img/product/product1.jpg")}
+                            src={require("../../../src/styles/dasboard/assets/img/scruffy.png")}
                             alt="product"
                           />
                         </a>
-                        <a href="javascript:void(0);">Macbook pro</a>
+                        <a href="javascript:void(0);">Scruffy</a>
                       </td>
-                      <td>PT001</td>
-                      <td>Computers</td>
-                      <td>N/D</td>
-                      <td>1500.00</td>
-                      <td>pc</td>
-                      <td>100.00</td>
-                      <td>Admin</td>
-                      <td>
-                        <a className="me-3" href="product-details.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/eye.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="me-3" href="editproduct.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/edit.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="confirm-text" href="javascript:void(0);">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/delete.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                      </td>
+                      <td>male</td>
+                      <td>dog</td>
+                      <td>0011</td>
+                      <td>1500</td>
+                      <td>Qr code</td>
+                      <td>customized Breed</td>
+                      <td>16th Aug 2022</td>
+                  
                     </tr>
                     <tr>
-                      <td>
-                        <label className="checkboxs">
-                          <input type="checkbox" />
-                          <span className="checkmarks"></span>
-                        </label>
-                      </td>
-                      <td className="productimgname">
-                        <a href="javascript:void(0);" className="product-img">
-                          <img
-                            src={require("../../../src/styles/dasboard/assets/img/product/product2.jpg")}
-                            alt="product"
-                          />
-                        </a>
-                        <a href="javascript:void(0);">Orange</a>
-                      </td>
-                      <td>PT002</td>
-                      <td>Fruits</td>
-                      <td>N/D</td>
-                      <td>10.00</td>
-                      <td>pc</td>
-                      <td>100.00</td>
-                      <td>Admin</td>
-                      <td>
-                        <a className="me-3" href="product-details.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/eye.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="me-3" href="editproduct.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/edit.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="confirm-text" href="javascript:void(0);">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/delete.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label className="checkboxs">
-                          <input type="checkbox" />
-                          <span className="checkmarks"></span>
-                        </label>
-                      </td>
-                      <td className="productimgname">
-                        <a href="javascript:void(0);" className="product-img">
-                          <img
-                            src={require("../../../src/styles/dasboard/assets/img/product/product3.jpg")}
-                            alt="product"
-                          />
-                        </a>
-                        <a href="javascript:void(0);">Pineapple</a>
-                      </td>
-                      <td>PT003</td>
-                      <td>Fruits</td>
-                      <td>N/D</td>
-                      <td>10.00</td>
-                      <td>pc</td>
-                      <td>100.00</td>
-                      <td>Admin</td>
-                      <td>
-                        <a className="me-3" href="product-details.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/eye.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="me-3" href="editproduct.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/edit.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="confirm-text" href="javascript:void(0);">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/delete.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label className="checkboxs">
-                          <input type="checkbox" />
-                          <span className="checkmarks"></span>
-                        </label>
-                      </td>
-                      <td className="productimgname">
-                        <a href="javascript:void(0);" className="product-img">
-                          <img
-                            src={require("../../../src/styles/dasboard/assets/img/product/product4.jpg")}
-                            alt="product"
-                          />
-                        </a>
-                        <a href="javascript:void(0);">Strawberry</a>
-                      </td>
-                      <td>PT004</td>
-                      <td>Fruits</td>
-                      <td>N/D</td>
-                      <td>10.00</td>
-                      <td>pc</td>
-                      <td>100.00</td>
-                      <td>Admin</td>
-                      <td>
-                        <a className="me-3" href="product-details.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/eye.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="me-3" href="editproduct.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/edit.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="confirm-text" href="javascript:void(0);">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/delete.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label className="checkboxs">
-                          <input type="checkbox" />
-                          <span className="checkmarks"></span>
-                        </label>
-                      </td>
-                      <td className="productimgname">
-                        <a href="javascript:void(0);" className="product-img">
-                          <img
-                            src={require("../../../src/styles/dasboard/assets/img/product/product5.jpg")}
-                            alt="product"
-                          />
-                        </a>
-                        <a href="javascript:void(0);">Avocat</a>
-                      </td>
-                      <td>PT005</td>
-                      <td>Accessories</td>
-                      <td>N/D</td>
-                      <td>10.00</td>
-                      <td>pc</td>
-                      <td>150.00</td>
-                      <td>Admin</td>
-                      <td>
-                        <a className="me-3" href="product-details.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/eye.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="me-3" href="editproduct.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/edit.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="confirm-text" href="javascript:void(0);">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/delete.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label className="checkboxs">
-                          <input type="checkbox" />
-                          <span className="checkmarks"></span>
-                        </label>
-                      </td>
-                      <td className="productimgname">
-                        <a href="javascript:void(0);" className="product-img">
-                          <img
-                            src={require("../../../src/styles/dasboard/assets/img/product/product6.jpg")}
-                            alt="product"
-                          />
-                        </a>
-                        <a href="javascript:void(0);">Macbook Pro</a>
-                      </td>
-                      <td>PT006</td>
-                      <td>Shoes</td>
-                      <td>N/D</td>
-                      <td>10.00</td>
-                      <td>pc</td>
-                      <td>100.00</td>
-                      <td>Admin</td>
-                      <td>
-                        <a className="me-3" href="product-details.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/eye.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="me-3" href="editproduct.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/edit.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="confirm-text" href="javascript:void(0);">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/delete.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label className="checkboxs">
-                          <input type="checkbox" />
-                          <span className="checkmarks"></span>
-                        </label>
-                      </td>
-                      <td className="productimgname">
-                        <a href="javascript:void(0);" className="product-img">
-                          <img
-                            src={require("../../../src/styles/dasboard/assets/img/product/product7.jpg")}
-                            alt="product"
-                          />
-                        </a>
-                        <a href="javascript:void(0);">Apple Earpods</a>
-                      </td>
-                      <td>PT007</td>
-                      <td>Shoes</td>
-                      <td>N/D</td>
-                      <td>10.00</td>
-                      <td>pc</td>
-                      <td>100.00</td>
-                      <td>Admin</td>
-                      <td>
-                        <a className="me-3" href="product-details.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/eye.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="me-3" href="editproduct.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/edit.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="confirm-text" href="javascript:void(0);">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/delete.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label className="checkboxs">
-                          <input type="checkbox" />
-                          <span className="checkmarks"></span>
-                        </label>
-                      </td>
-                      <td className="productimgname">
-                        <a href="javascript:void(0);" className="product-img">
-                          <img
-                            src={require("../../../src/styles/dasboard/assets/img/product/product8.jpg")}
-                            alt="product"
-                          />
-                        </a>
-                        <a href="javascript:void(0);">iPhone 11 </a>
-                      </td>
-                      <td>PT008</td>
-                      <td>Fruits</td>
-                      <td>N/D</td>
-                      <td>10.00</td>
-                      <td>pc</td>
-                      <td>100.00</td>
-                      <td>Admin</td>
-                      <td>
-                        <a className="me-3" href="product-details.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/eye.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="me-3" href="editproduct.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/edit.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="confirm-text" href="javascript:void(0);">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/delete.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label className="checkboxs">
-                          <input type="checkbox" />
-                          <span className="checkmarks"></span>
-                        </label>
-                      </td>
-                      <td className="productimgname">
-                        <a href="javascript:void(0);" className="product-img">
-                          <img
-                            src={require("../../../src/styles/dasboard/assets/img/product/product9.jpg")}
-                            alt="product"
-                          />
-                        </a>
-                        <a href="javascript:void(0);">samsung </a>
-                      </td>
-                      <td>PT009</td>
-                      <td>Earphones</td>
-                      <td>N/D</td>
-                      <td>10.00</td>
-                      <td>pc</td>
-                      <td>100.00</td>
-                      <td>Admin</td>
-                      <td>
-                        <a className="me-3" href="product-details.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/eye.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="me-3" href="editproduct.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/edit.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="confirm-text" href="javascript:void(0);">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/delete.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label className="checkboxs">
-                          <input type="checkbox" />
-                          <span className="checkmarks"></span>
-                        </label>
-                      </td>
-                      <td className="productimgname">
-                        <a href="javascript:void(0);" className="product-img">
-                          <img
-                            src={require("../../../src/styles/dasboard/assets/img/product/product11.jpg")}
-                            alt="product"
-                          />
-                        </a>
-                        <a href="javascript:void(0);">Banana</a>
-                      </td>
-                      <td>PT0010</td>
-                      <td>Health Care</td>
-                      <td>N/D</td>
-                      <td>10.00</td>
-                      <td>kg</td>
-                      <td>100.00</td>
-                      <td>Admin</td>
-                      <td>
-                        <a className="me-3" href="product-details.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/eye.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="me-3" href="editproduct.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/edit.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="confirm-text" href="javascript:void(0);">
-                          <img src="assets/img/icons/delete.svg" alt="img" />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label className="checkboxs">
-                          <input type="checkbox" />
-                          <span className="checkmarks"></span>
-                        </label>
-                      </td>
-                      <td className="productimgname">
-                        <a href="javascript:void(0);" className="product-img">
-                          <img
-                            src={require("../../../src/styles/dasboard/assets/img/product/product17.jpg")}
-                            alt="product"
-                          />
-                        </a>
-                        <a href="javascript:void(0);">Limon</a>
-                      </td>
-                      <td>PT0011</td>
-                      <td>Health Care</td>
-                      <td>N/D</td>
-                      <td>10.00</td>
-                      <td>kg</td>
-                      <td>100.00</td>
-                      <td>Admin</td>
-                      <td>
-                        <a className="me-3" href="product-details.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/eye.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="me-3" href="editproduct.html">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/edit.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                        <a className="confirm-text" href="javascript:void(0);">
-                          <img
-                            src={
-                              require("../../../src/styles/dasboard/assets/img/icons/delete.svg")
-                                .default
-                            }
-                            alt="img"
-                          />
-                        </a>
-                      </td>
-                    </tr>
+                    <td>
+                      <label className="checkboxs">
+                        <input type="checkbox" />
+                        <span className="checkmarks"></span>
+                      </label>
+                    </td>
+                    <td className="productimgname">
+                      <a href="javascript:void(0);" className="product-img">
+                        <img
+                          src={require("../../../src/styles/dasboard/assets/img/scruffy.png")}
+                          alt="product"
+                        />
+                      </a>
+                      <a href="javascript:void(0);">Scruffy</a>
+                    </td>
+                    <td>male</td>
+                    <td>dog</td>
+                    <td>0011</td>
+                    <td>1500</td>
+                    <td>Qr code</td>
+                    <td>Breedy</td>
+                    <td>16th Aug 2022</td>
+                    
+                  </tr>
                   </tbody>
                 </table>
               </div>

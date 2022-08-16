@@ -16,9 +16,10 @@ const AddPet = () => {
     (state) => state.ContractReducer.contractState
   );
     const generateRandomQRCodes = () =>{
+      console.log(randomstring.generate(12))
       return randomstring.generate(12);
     }
-  let name = useRef(null)
+  let petName = useRef("")
   let chipId = useRef("") 
   let appleTag = useRef("")
   let qrCode = useRef("")
@@ -28,29 +29,35 @@ const AddPet = () => {
   let description = useRef("");
  
 
-  const handleUserSubmit = async (event) => {
+  const handleUserSubmit = async () => {
     const address = connectedWeb3Account.web3Account[0]
     console.log(contractData.contractData)
-    name = name.current.value;
-    chipId = chipId.current.value;
-    appleTag = appleTag.current.value;
-    animalType = animalType.current.value;
-    gender = gender.current.value;
-    breed = breed.current.value;
-    description = description.current.value;
-    const contract = contractData.contractData
-    console.log(animalType)
-    // registerPets(contract, name, chipId, appleTag, generateRandomQRCodes, animalType, gender, breed, description)
+    // let name = petName.current.value;
+    // let chipId = chipId.current.value;
+    // let appleTag = appleTag.current.value;
+    // let animalType = animalType.current.value;
+    // let gender = gender.current.value;
+    // let breed = breed.current.value;
+    // let description = description.current.value;
+    let contract = contractData.contractData
+    console.log(
+      petName.current.value, chipId.current.value, appleTag.current.value, 
+      animalType.current.value, gender.current.value, breed.current.value, 
+      description.current.value, contractData.contractData)
+      registerPetsFunction(contract, address, petName.current.value, chipId.current.value, appleTag.current.value, generateRandomQRCodes(),
+      animalType.current.value, gender.current.value, breed.current.value, 
+      description.current.value)
+      petName.current.value = ""
     // event.target.reset();
 
 }
-// const registerPets = async (contract, address, name, chipId, appleTag, generateRandomQRCodes, animalType, gender, breed, description) => {
-//   await contract.methods.registerPets(address, name, chipId, appleTag, generateRandomQRCodes, animalType, gender, breed, description).send({from: address}
-//     ).on('receipt', function(){
-//     alert("Transaction sent!")
+const registerPetsFunction = async (contract, address, petName, chipId, appleTag, generateRandomQRCodes, animalType, gender, breed, description) => {
+  await contract.methods.registerPets(petName, chipId, appleTag, generateRandomQRCodes, animalType, gender, breed, description).send({from: address}
+    ).on('receipt', function(){
+    alert("Pet Transaction sent!")
    
-//   });
-// };
+  });
+};
 
   useEffect(() => {
     
@@ -75,7 +82,7 @@ const AddPet = () => {
                   <div className="form-group">
                     <label>Pet Name</label>
                     <input type="text" 
-                    ref={name}
+                    ref={petName}
                     />
                   </div>
                 </div>
@@ -130,7 +137,7 @@ const AddPet = () => {
                   <div className="form-group">
                     <label>QR Codde</label>
                     <div style={{ background: 'white', padding: '16px' }} >
-                   <QRCode value={generateRandomQRCodes()} size="50"/>
+                   <QRCode value="https://grand-swan-7d7bbf.netlify.app/9ORjpgm87GMk-qr1.html" size="50"/>
                  </div>
                   </div>
                 </div>

@@ -99,10 +99,22 @@ contract FurDetective{
     function getMyRegisteredPets(address petOwnerAddress) public view returns(uint[] memory) {
         return myRegisteredPets[petOwnerAddress].chipId;
     }
-    function getPetByQRCode(string memory _qrCode) public view returns (string memory name, string memory gender, string memory breed, address sender) {
+
+    function getPetByQRCode(string memory _qrCode) public view returns (
+        string memory name, string memory gender, string memory breed, address sender, string memory fullName, string memory cellPhone, string memory location, string memory email
+        ) {
         // grab the owner / sender and use that to pull registered owners info and return it.
-        return (searchPetByQrCode[_qrCode].name, searchPetByQrCode[_qrCode].breed, searchPetByQrCode[_qrCode].gender, searchPetByQrCode[_qrCode].sender);
+        string memory petName = searchPetByQrCode[_qrCode].name;
+        string memory petBreed= searchPetByQrCode[_qrCode].breed;
+        string memory petGender= searchPetByQrCode[_qrCode].gender;
+        address petOwnerAddress = searchPetByQrCode[_qrCode].sender;
+
+        string memory _fullName = ownerInfoMapping[petOwnerAddress].fullName;
+        string memory _cellPhone = ownerInfoMapping[petOwnerAddress].cellPhone;
+        string memory _location = ownerInfoMapping[petOwnerAddress].location;
+        string memory _email = ownerInfoMapping[petOwnerAddress].email;
+
+        return (petName, petBreed, petGender, petOwnerAddress, _fullName, _cellPhone, _location, _email);
     }
 }
-
 

@@ -70,35 +70,6 @@ const Sidebar = () => {
              <span>Transfer Ownership</span>
               </Link>
               </li>
-
-              <li className="submenu">
-                <a href="#">
-                  <img
-                    src={
-                      require("../../../src/styles/dasboard/assets/img/icons/product.svg")
-                        .default
-                    }
-                    alt="img"
-                  />
-                  <span>Menu two</span>
-                  <span className="menu-arrow"></span>
-                </a>
-                <ul>
-                  <li>
-                    <a href="productlist.html">Pet List</a>
-                  </li>
-                  <li>
-                    <a href="addproduct.html">Add User</a>
-                  </li>
-                  <li>
-                    <a href="addproduct.html">Add Pet</a>
-                  </li>
-
-                  <li>
-                    <a href="barcode.html">Print Barcode</a>
-                  </li>
-                </ul>
-              </li>
             </ul>
           </div>
         </div>
