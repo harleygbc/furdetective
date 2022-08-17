@@ -1,8 +1,8 @@
 # Project Description
 
-## FurDetective
+## [FurDetective.io](https://furdetective.io)
 
-FurDetective enables pet owners to register their pets and find them by chip Id or Qr Codes.
+[FurDetective](https://furdetective.io) enables pet owners to register their pets and find them by chip Id or Qr Codes.
 
 # Tech Requirements
 
@@ -55,9 +55,14 @@ npm start
 
 ![Dashboard Index](./client/src/styles/dasboard/assets/img/metamask_wallet.png)
 
-# State Machine Diagram
+## State Machine Diagram
 
-# Project Plan
+## Architecture Plan
+![Dashboard Index](./client/src/styles/dasboard/assets/img/architecture_plan.jpg)
+
+## Project Plan & Timeline
+![Dashboard Index](./client/src/styles/dasboard/assets/img/project_timeline.png)
+
 
 ## Team
 
