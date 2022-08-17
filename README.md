@@ -5,7 +5,9 @@
 [FurDetective](https://furdetective.io) enables pet owners to register their pets and find them by chip ID or QR Codes.
 
 # Project Overview
-[FurDetective Lean Canvas.pdf](https://github.com/kenmartey/furdetective/files/9365804/FurDetective.Lean.Canvas.pdf)
+![FurDetectiveLeanCanvassPNG](https://user-images.githubusercontent.com/99918492/185234704-d12fdaf5-20e3-42ed-9ff3-4425f7651710.png)
+Download: [FurDetective Lean Canvas.pdf](https://github.com/kenmartey/furdetective/files/9365804/FurDetective.Lean.Canvas.pdf)
+
 
 
 # Tech Requirements
