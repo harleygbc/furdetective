@@ -2,7 +2,7 @@
 
 ## [FurDetective.io](https://furdetective.io)
 
-[FurDetective](https://furdetective.io) enables pet owners to register their pets and find them by chip Id or Qr Codes.
+[FurDetective](https://furdetective.io) enables pet owners to register their pets and find them by chip ID or QR Codes.
 
 # Tech Requirements
 
