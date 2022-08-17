@@ -125,11 +125,11 @@ const PetList = () => {
                         </label>
                       </th>
                       <th>Pet Name</th>
-                      <th>gender</th>
+                      <th>Gender</th>
                       <th>Animal Type</th>
                       <th>Chip Id</th>
                       <th>Apple Tag</th>
-                      <th>Qr Code</th>
+                      <th>QR Code</th>
                       <th>Breed</th>
                       <th>Time stamp</th>
                     </tr>

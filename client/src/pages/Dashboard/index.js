@@ -62,12 +62,12 @@ const Index = () => {
                 
                 <div className="dash-widgetcontent">
                   <h5>
-                    $
+
                     <span className="counters" data-count="307144.00">
-                      $307,144.00
+                      20
                     </span>
                   </h5>
-                  <h6>Total Purchase Due</h6>
+                  <h6>Users</h6>
                 </div>
               </div>
             </div>
@@ -88,10 +88,10 @@ const Index = () => {
                   <h5>
                     $
                     <span className="counters" data-count="4385.00">
-                      $4,385.00
+                      25
                     </span>
                   </h5>
-                  <h6>Total Sales Due</h6>
+                  <h6>Total transactions</h6>
                 </div>
               </div>
             </div>
@@ -110,12 +110,12 @@ const Index = () => {
                 </div>
                 <div className="dash-widgetcontent">
                   <h5>
-                    $
+                    
                     <span className="counters" data-count="385656.50">
-                      385,656.50
+                      3
                     </span>
                   </h5>
-                  <h6>Total Sale Amount</h6>
+                  <h6>Failed Transactions</h6>
                 </div>
               </div>
             </div>
@@ -136,12 +136,12 @@ const Index = () => {
                 <div className="dash-widgetcontent">
                 
                   <h5>
-                    $
+
                     <span className="counters" data-count="40000.00">
-                      400.00
+                      100
                     </span>
                   </h5>
-                  <h6>Total Sale Amount</h6>
+                  <h6>Successful Transactions</h6>
                 </div>
               </div>
             </div>
@@ -160,7 +160,7 @@ const Index = () => {
               <div className="dash-count das1">
                 <div className="dash-counts">
                   <h4>100</h4>
-                  <h5>Suppliers</h5>
+                  <h5>Basic Registrations</h5>
                 </div>
                 <div className="dash-imgs">
                   <i data-feather="user-check"></i>
@@ -170,8 +170,8 @@ const Index = () => {
             <div className="col-lg-3 col-sm-6 col-12 d-flex">
               <div className="dash-count das2">
                 <div className="dash-counts">
-                  <h4>100</h4>
-                  <h5>Purchase Invoice</h5>
+                  <h4>1</h4>
+                  <h5>Ownership Transfers</h5>
                 </div>
                 <div className="dash-imgs">
                   <i data-feather="file-text"></i>
@@ -182,7 +182,7 @@ const Index = () => {
               <div className="dash-count das3">
                 <div className="dash-counts">
                   <h4>105</h4>
-                  <h5>Sales Invoice</h5>
+                  <h5>veterinary visits</h5>
                 </div>
                 <div className="dash-imgs">
                   <i data-feather="file"></i>
@@ -199,11 +199,11 @@ const Index = () => {
                   <thead>
                     <tr>
                     <th>Pet Name</th>
-                    <th>gender</th>
+                    <th>Gender</th>
                     <th>Animal Type</th>
                     <th>Chip Id</th>
                     <th>Apple Tag</th>
-                    <th>Qr Code</th>
+                    <th>QR Code</th>
                     <th>Breed</th>
                     <th>Time stamp</th>
                     </tr>
