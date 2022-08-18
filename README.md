@@ -9,7 +9,11 @@ FurDetective enables pet owners to register their pets and find them using a pro
 
 Pet parents need to register their pets on FurDetective. Once registered, anyone can easily find the owner if a pet is lost using one of the abovementioned identifications. Owners can control their privacy until a ‘rescue me’ alert is issued. Searching for a pet is furever free.  
 
-The blockchain allows us to pass records of a pet through its life stages and, if needed, across multiple owners. Over time, as your pet grows up, their complete medical information can also be updated and recorded.
+The blockchain allows us to pass records of a pet through its life stages and, if needed, across multiple owners. Over time, as your pet grows up, their complete medical information can also be updated and recorded.  
+
+Pets are one of the largest industries in Canada, generating over $7B+ in 2020. In comparison, Tesla’s 2021 global car sales were 5.5 billion. FurDetective uses the blockchain to bypass many legacy systems that don’t work, providing a simple, clean, and easy solution.
+
+Our mission is to ensure that pet gets loved in their own home.
 
 
 # Project Overview
