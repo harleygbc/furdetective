@@ -68,7 +68,7 @@ The transition changes has the following effect on the state. There are 4 states
 ## Project Plan
 ![Gantt-furdetective](https://user-images.githubusercontent.com/99918492/185484725-7847cdd3-4eb5-4106-83c4-9a58c37b810b.jpg)
 
-## Timeline & Phases
+## Phases
 ![Dashboard Index](./client/src/styles/dasboard/assets/img/project_timeline.png)
 
 # Tech Requirements
