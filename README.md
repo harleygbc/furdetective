@@ -36,6 +36,9 @@ The ability to search for pets by:
 • Pet Detective QR code.    
 • Owner.  
 
+## Architecture Plan
+![Dashboard Index](./client/src/styles/dasboard/assets/img/architecture_plan.jpg)
+
 ## State Machine Diagram
 ![state_diagram](https://user-images.githubusercontent.com/99918492/185465223-6c709a88-c788-4705-8e10-af1858e6164c.png)
 
@@ -61,9 +64,6 @@ The transition changes has the following effect on the state. There are 4 states
   _This state occurs when either a pet is registered or when a pet has a new chip/IoT device/Apple Tag is added._
 - Pet without owner  
   _This state is when a pet is adopted or transferred to a new pet owner._
-
-## Architecture Plan
-![Dashboard Index](./client/src/styles/dasboard/assets/img/architecture_plan.jpg)
 
 ## Project Plan
 ![Gantt-furdetective](https://user-images.githubusercontent.com/99918492/185484725-7847cdd3-4eb5-4106-83c4-9a58c37b810b.jpg)
