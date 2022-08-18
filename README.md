@@ -122,6 +122,10 @@ npm start
 
 ![Dashboard Index](./client/src/styles/dasboard/assets/img/metamask_wallet.png)
 
+## Marketing Materials:
+Website: [FurDetective.io](https://furdetective.io)
+Logo: ![furdetective_logo_main_2_orange](https://user-images.githubusercontent.com/99918492/185514902-9cfa5f53-f58f-410b-ac01-c7941b613a5c.jpg)
+Presentation: [FurDetective_Presentation.pdf](https://github.com/kenmartey/furdetective/files/9378292/FurDetective_Presentation.pdf)
 
 
 ## Team
