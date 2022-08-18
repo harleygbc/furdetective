@@ -21,11 +21,11 @@ A State record for each pet that includes the following:
 • Additional identification (Photos)  
 
 The ability to search for pets by:  
-• Pet chip ID._  
-• IoT device._  
-• Apple AirTag._
-• Pet Detective QR code._  
-• Owner._
+• Pet chip ID.  
+• IoT device.  
+• Apple AirTag.  
+• Pet Detective QR code.    
+• Owner.  
 
 ## State Machine Diagram
 ![state_diagram](https://user-images.githubusercontent.com/99918492/185465223-6c709a88-c788-4705-8e10-af1858e6164c.png)
