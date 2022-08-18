@@ -1,5 +1,6 @@
 # Project Description
-![furdetective_logo_main_orange_github](https://user-images.githubusercontent.com/99918492/185278853-c9091788-a715-4eb9-8fbc-a99a68a4f233.jpg)
+![furdetective_logo_main_orange_github](https://user-images.githubusercontent.com/99918492/185278978-54726005-f871-47e3-8b7c-8dbf7acbc0a0.jpg)
+
 
 ## [FurDetective.io](https://furdetective.io)
 
