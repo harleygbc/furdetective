@@ -119,11 +119,6 @@ npm start
 ## Project Plan & Timeline
 ![Dashboard Index](./client/src/styles/dasboard/assets/img/project_timeline.png)
 
-## Marketing materials
-Website: [FurDetective.io](https://furdetective.io)
-Presentation: 
-
-
 ## Team
 
 - Nathan Harley (Project Lead)
