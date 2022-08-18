@@ -113,8 +113,6 @@ npm start
 
 ![Dashboard Index](./client/src/styles/dasboard/assets/img/metamask_wallet.png)
 
-## State Machine Diagram
-
 ## Architecture Plan
 ![Dashboard Index](./client/src/styles/dasboard/assets/img/architecture_plan.jpg)
 
