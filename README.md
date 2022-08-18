@@ -11,7 +11,45 @@
 ![FurDetectiveLeanCanvassPNG](https://user-images.githubusercontent.com/99918492/185234704-d12fdaf5-20e3-42ed-9ff3-4425f7651710.png)
 Download: [FurDetective Lean Canvas.pdf](https://github.com/kenmartey/furdetective/files/9365804/FurDetective.Lean.Canvas.pdf)
 
+# Requirements
 
+A Hyperledger Fabric-based dApp vehicle registry that tracks a vehicle’s lifecycle.
+
+A State record for each vehicle that includes the following:  
+• Vehicle VIN (Vehicle Identification Number)  
+• License plate history  
+• Owner history  
+• Repair history  
+• Accident history
+
+
+The ability to search for vehicles by:  
+• VIN  
+• Owner  
+• Plate
+
+## State Machine Diagram
+
+## Transaction Descriptions
+he following transition actions change the state of the state machine. These include:
+
+- Buying a vehicle
+- Registering a vehicle
+- Selling a vehicle
+- Destroying a vehicle (accident, loss & theft)
+- Expiry of a registered vehicle
+
+## State Data Descriptions
+The transition changes has the following effect on the state. There are 4 states:
+
+- No vehicle  
+  _This state has no data, it is also the return state for destroyed vehicles._
+- Unregistered/no plate  
+  _The state change occurs when a person purchases a vehicle. It is also the return state for when a plate expires._
+- Registered/plated  
+  _This state occurs when either a vehicle is registered or when a vehicle has been purchased and the previously unregistered plate is assigned to it._
+- Plate without a vehicle  
+  _This state is when a plated vehicle is sold to a 3rd party such as a dealer. At this point the vehicle is unregistered._
 
 # Tech Requirements
 
