@@ -20,12 +20,12 @@ A State record for each pet that includes the following:
 • Medical history  
 • Additional identification (Photos)  
 
-The ability to search for vehicles by:  
-• Pet chip ID  
-• IoT device  
-• Apple AirTag
-• Pet Detective QR code  
-• Owner
+The ability to search for pets by:  
+• Pet chip ID._  
+• IoT device._  
+• Apple AirTag._
+• Pet Detective QR code._  
+• Owner._
 
 ## State Machine Diagram
 ![state_diagram](https://user-images.githubusercontent.com/99918492/185465223-6c709a88-c788-4705-8e10-af1858e6164c.png)
@@ -35,11 +35,11 @@ The ability to search for vehicles by:
 The following transition actions change the state of the state machine. These include:
 
 - Adoption or purchasing a pet
-- Registering a pet._
-- Transfering a pet._
-- New pet owner registration._
-- Pet registration de-activation._
-- Pet lost or passed._
+- Registering a pet.
+- Transfering a pet.
+- New pet owner registration.
+- Pet registration de-activation.
+- Pet lost or passed.
 
 ## State Data Descriptions
 The transition changes has the following effect on the state. There are 4 states:
