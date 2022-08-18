@@ -70,6 +70,8 @@ npm start
 ![Dashboard Index](./client/src/styles/dasboard/assets/img/project_timeline.png)
 
 ## Marketing materials
+Website: [FurDetective.io](https://furdetective.io)
+Presentation: 
 
 
 ## Team
