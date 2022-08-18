@@ -13,7 +13,7 @@ The blockchain allows us to pass records of a pet through its life stages and, i
 
 Pets are one of the largest industries in Canada, generating over $7B+ in 2020. In comparison, Tesla’s 2021 global car sales were 5.5 billion. FurDetective uses the blockchain to bypass many legacy systems that don’t work, providing a simple, clean, and easy solution.
 
-Our mission is to ensure that pet gets loved in their own home.
+Our mission is to ensure that every pet gets loved in their own home.
 
 
 # Project Overview
