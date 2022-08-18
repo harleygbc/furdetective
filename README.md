@@ -69,6 +69,8 @@ npm start
 ## Project Plan & Timeline
 ![Dashboard Index](./client/src/styles/dasboard/assets/img/project_timeline.png)
 
+## Marketing materials
+
 
 ## Team
 
