@@ -117,7 +117,7 @@ npm start
 ![Dashboard Index](./client/src/styles/dasboard/assets/img/architecture_plan.jpg)
 
 ## Project Plan
-[Project Schedule.pdf](https://github.com/kenmartey/furdetective/files/9377235/Project.Schedule.pdf)
+![Gantt-furdetective](https://user-images.githubusercontent.com/99918492/185484725-7847cdd3-4eb5-4106-83c4-9a58c37b810b.jpg)
 
 ## Timeline & Phases
 ![Dashboard Index](./client/src/styles/dasboard/assets/img/project_timeline.png)
