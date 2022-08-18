@@ -29,6 +29,8 @@ The ability to search for vehicles by:
 • Plate
 
 ## State Machine Diagram
+![state_diagram](https://user-images.githubusercontent.com/99918492/185465223-6c709a88-c788-4705-8e10-af1858e6164c.png)
+
 
 ## Transaction Descriptions
 he following transition actions change the state of the state machine. These include:
