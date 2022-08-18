@@ -35,23 +35,23 @@ The ability to search for vehicles by:
 The following transition actions change the state of the state machine. These include:
 
 - Adoption or purchasing a pet
-- Registering a pet
-- Transfering a pet
-- New pet owner registration
-- Pet registration de-activation
-- Pet lost or passed
+- Registering a pet._
+- Transfering a pet._
+- New pet owner registration._
+- Pet registration de-activation._
+- Pet lost or passed._
 
 ## State Data Descriptions
 The transition changes has the following effect on the state. There are 4 states:
 
-- No vehicle  
-  _This state has no data, it is also the return state for destroyed vehicles._
-- Unregistered/no plate  
-  _The state change occurs when a person purchases a vehicle. It is also the return state for when a plate expires._
-- Registered/plated  
-  _This state occurs when either a vehicle is registered or when a vehicle has been purchased and the previously unregistered plate is assigned to it._
-- Plate without a vehicle  
-  _This state is when a plated vehicle is sold to a 3rd party such as a dealer. At this point the vehicle is unregistered._
+- Pet Guardian, no pet  
+  _This state has no data, it is also the return state for lost or passed pets._
+- Pet without WhiskerID registration  
+  _The state change occurs when a person purchases or adopts a pet. It is also the return state for when a owner wants to de-activate a registration._
+- Registered pet on FurDetective with WhiskerID  
+  _This state occurs when either a pet is registered or when a pet has a new chip/IoT device/Apple Tag is added._
+- Pet without owner  
+  _This state is when a pet is adopted or transferred to a new pet owner._
 
 # Tech Requirements
 
