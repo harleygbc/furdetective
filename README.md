@@ -12,34 +12,34 @@
 Download: [FurDetective Lean Canvas.pdf](https://github.com/kenmartey/furdetective/files/9365804/FurDetective.Lean.Canvas.pdf)
 
 # Requirements
+A public blockchain based bApp (Blockchain Application) that tracks the pets ownership.
 
-A Hyperledger Fabric-based dApp vehicle registry that tracks a vehicle’s lifecycle.
-
-A State record for each vehicle that includes the following:  
-• Vehicle VIN (Vehicle Identification Number)  
-• License plate history  
+A State record for each pet that includes the following:  
+• Pet chip ID, IoT, Apple Tag & Pet Detective QR code  
 • Owner history  
-• Repair history  
-• Accident history
-
+• Medical history  
+• Additional identification (Photos)  
 
 The ability to search for vehicles by:  
-• VIN  
-• Owner  
-• Plate
+• Pet chip ID  
+• IoT device  
+• Apple AirTag
+• Pet Detective QR code  
+• Owner
 
 ## State Machine Diagram
 ![state_diagram](https://user-images.githubusercontent.com/99918492/185465223-6c709a88-c788-4705-8e10-af1858e6164c.png)
 
 
 ## Transaction Descriptions
-he following transition actions change the state of the state machine. These include:
+The following transition actions change the state of the state machine. These include:
 
-- Buying a vehicle
-- Registering a vehicle
-- Selling a vehicle
-- Destroying a vehicle (accident, loss & theft)
-- Expiry of a registered vehicle
+- Adoption or purchasing a pet
+- Registering a pet
+- Transfering a pet
+- New pet owner registration
+- Pet registration de-activation
+- Pet lost or passed
 
 ## State Data Descriptions
 The transition changes has the following effect on the state. There are 4 states:
