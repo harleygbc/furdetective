@@ -1,11 +1,15 @@
 # Project Description
 ![furdetective_logo_main_orange_github](https://user-images.githubusercontent.com/99918492/185279612-3eb568ea-a351-4f35-8ace-d6db3cc9856f.jpg)
 
-
-
 ## [FurDetective.io](https://furdetective.io)
 
-[FurDetective](https://furdetective.io) enables pet owners to register their pets and find them by chip ID or QR Codes.
+[FurDetective](https://furdetective.io) 75% of lost pets tragically never return home and pets can’t tell you where their home is or any medical needs they might have. In 2022, if your pet goes on an adventure, you have three terrible options. Go searching on foot, call around shelters, or put up posters. 
+
+FurDetective enables pet owners to register thier pets and find them by using a proprietary blockchain-powered match algorithm and Pet Guardian identification system. It creates a probability match utilizing an array of multiple IDs to identify a pet. Be it a micro-chip, IoT device, or Apple AirTags OR you can use a PetDetective QR code.
+
+Pet parents must register their pet on FurDetective but they you don’t need a vet appointment. If a pet is lost, anyone can easily find the owner using one of the formentioned identication methods. Owners can control their privacy until a ‘rescue me’ alert is issued. Searching for a pet is furever free. 
+
+The blockchain allows us to pass records of a pet through its life stages and, if needed, across multiple owners. Over time, as your pet grows up, their complete medical information can be also be updated and recorded. 
 
 # Project Overview
 ![FurDetectiveLeanCanvassPNG](https://user-images.githubusercontent.com/99918492/185234704-d12fdaf5-20e3-42ed-9ff3-4425f7651710.png)
