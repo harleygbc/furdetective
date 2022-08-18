@@ -3,7 +3,7 @@
 
 ## [FurDetective.io](https://furdetective.io)
 
-[FurDetective](https://furdetective.io) 75% of lost pets tragically never return home and pets can’t tell you where their home is or any medical needs they might have. In 2022, if your pet goes on an adventure, you have three terrible options. Go searching on foot, call around shelters, or put up posters. 
+75% of lost pets tragically never return home and pets can’t tell you where their home is or any medical needs they might have. In 2022, if your pet goes on an adventure, you have three terrible options. Go searching on foot, call around shelters, or put up posters. 
 
 FurDetective enables pet owners to register thier pets and find them by using a proprietary blockchain-powered match algorithm and Pet Guardian identification system. It creates a probability match utilizing an array of multiple IDs to identify a pet. Be it a micro-chip, IoT device, or Apple AirTags OR you can use a PetDetective QR code.
 
