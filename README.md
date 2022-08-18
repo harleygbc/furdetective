@@ -116,7 +116,10 @@ npm start
 ## Architecture Plan
 ![Dashboard Index](./client/src/styles/dasboard/assets/img/architecture_plan.jpg)
 
-## Project Plan & Timeline
+## Project Plan
+[Project Schedule.pdf](https://github.com/kenmartey/furdetective/files/9377235/Project.Schedule.pdf)
+
+## Timeline & Phases
 ![Dashboard Index](./client/src/styles/dasboard/assets/img/project_timeline.png)
 
 ## Team
