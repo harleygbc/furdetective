@@ -5,7 +5,7 @@
 
 75% of lost pets tragically never return home, and pets can’t tell you where their home is or any medical needs they might have. In 2022, if your pet goes on an adventure, you have three terrible options. Go searching on foot, call around shelters, or put up posters.  
 
-FurDetective enables pet owners to register their pets and find them using a proprietary blockchain-powered match algorithm and Pet Guardian identification system. It creates a probability match utilizing an array of multiple IDs to identify a pet from one or more devices, be it a micro-chip, IoT device, or Apple AirTags OR, you can use a specially generated PetDetective QR code!  
+FurDetective enables pet owners to register their pets and find them using a proprietary blockchain-powered match algorithm and Pet Guardian identification system. It creates a probability match utilizing an array of multiple IDs to identify a pet from one or more devices, be it a micro-chip, IoT device, or Apple AirTags OR, you can use a specially generated FurDetective QR code!  
 
 Pet parents need to register their pets on FurDetective. Once registered, anyone can easily find the owner if a pet is lost using one of the abovementioned identifications. Owners can control their privacy until a ‘rescue me’ alert is issued. Searching for a pet is furever free.  
 
