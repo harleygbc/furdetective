@@ -157,7 +157,7 @@ const PetList = () => {
                       <td>1500</td>
                       <td>Qr code</td>
                       <td>customized Breed</td>
-                      <td>16th Aug 2022</td>
+                      <td>19th Aug 2022</td>
                   
                     </tr>
                     <tr>
@@ -182,7 +182,7 @@ const PetList = () => {
                     <td>1500</td>
                     <td>Qr code</td>
                     <td>Breedy</td>
-                    <td>16th Aug 2022</td>
+                    <td>14th Aug 2022</td>
                     
                   </tr>
                   </tbody>

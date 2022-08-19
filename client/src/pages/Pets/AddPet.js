@@ -118,7 +118,7 @@ const registerPetsFunction = async (contract, address, petName, chipId, appleTag
                     <select className="select" ref={breed}>
                       <option>Choose Breed</option>
                       <option>Husky</option>
-                      <option>Flur</option>
+                      <option>Customized Breed</option>
                       <option>fluffy</option>
                     </select>
                   </div>
