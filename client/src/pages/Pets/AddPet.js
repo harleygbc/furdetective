@@ -137,7 +137,7 @@ const registerPetsFunction = async (contract, address, petName, chipId, appleTag
                   <div className="form-group">
                     <label>QR Code</label>
                     <div style={{ background: 'white', padding: '16px' }} >
-                   <QRCode value="https://www.furdetective.io/9ORjpgm87GMk-qr1.html" size="350"/>
+                   <QRCode value="https://www.furdetective.io/9ORjpgm87GMk-qr1.html" size="80"/>
                  </div>
                   </div>
                 </div>

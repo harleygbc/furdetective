@@ -14,15 +14,16 @@
 - Truffle framework
 - node & npm
 
-
 # Architecture Plan
 
 ![Dashboard Index](./client/src/styles/dasboard/assets/img/architecture_plan.jpg)
 
 ## State Machine Diagram
+
 [Replace with the state diagram image]
 
 ## Project Plan & Timeline
+
 ![Dashboard Index](./client/src/styles/dasboard/assets/img/project_timeline.png)
 
 ## Installation Process
@@ -65,13 +66,6 @@ npm start
 #### Connecting to Metamask wallet
 
 ![Dashboard Index](./client/src/styles/dasboard/assets/img/metamask_wallet.png)
-
-
-
-
-
-
-
 
 ## Team
 

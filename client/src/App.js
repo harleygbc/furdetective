@@ -27,6 +27,7 @@ import NavigationBar from "components/NavigationBar/NavigationBar";
 import Sidebar from "components/Sidebar/Sidebar";
 import PetList from "pages/Pets/PetList";
 import AddUser from "pages/User/AddUser";
+import OwnershipTransfer from "pages/OwnershipTransfer/OwnershipTransfer";
 
 function App() {
   useEffect(() => {
@@ -45,6 +46,8 @@ function App() {
       <Route path="/" component={Dashboard} exact />
       <Route path="/pet-list" component={PetList} exact />
       <Route path="/new-user" component={AddUser} exact />
+      <Route path="/transfer-ownership" component={OwnershipTransfer} exact />
+
       <Sidebar />
     </Router>
   );
